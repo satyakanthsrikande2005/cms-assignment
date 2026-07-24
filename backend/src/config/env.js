@@ -11,6 +11,12 @@ const env = {
     process.env.JWT_SECRET || "change_this_to_a_long_random_secret_key",
 
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "7d",
+
+  clientUrl: process.env.CLIENT_URL || "http://localhost:5173",
+  publicUrl: process.env.PUBLIC_URL || "http://localhost:3000",
+
+  uploadDir: process.env.UPLOAD_DIR || "uploads",
+  maxFileSize: Number(process.env.MAX_FILE_SIZE) || 5 * 1024 * 1024,
 };
 
 module.exports = env;
