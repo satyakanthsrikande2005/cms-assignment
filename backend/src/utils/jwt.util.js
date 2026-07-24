@@ -11,4 +11,4 @@ const verifyToken = (token) => {
   return jwt.verify(token, env.jwtSecret);
 };
 
-module.exports = { signToken, verifyToken };
+module.exports = { signToken, generateToken: signToken, verifyToken };
