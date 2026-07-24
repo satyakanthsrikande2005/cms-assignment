@@ -21,7 +21,6 @@ const settingSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-settingSchema.index({ key: 1 });
 settingSchema.index({ group: 1 });
 
 module.exports = mongoose.model("Setting", settingSchema);

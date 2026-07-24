@@ -61,7 +61,6 @@ const pageSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-pageSchema.index({ slug: 1 });
 pageSchema.index({ status: 1, publishedAt: -1 });
 pageSchema.index({ title: "text", content: "text", excerpt: "text" });
 

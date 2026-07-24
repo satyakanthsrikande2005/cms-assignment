@@ -19,7 +19,6 @@ const tagSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-tagSchema.index({ slug: 1 });
 tagSchema.index({ name: 1 });
 
 module.exports = mongoose.model("Tag", tagSchema);

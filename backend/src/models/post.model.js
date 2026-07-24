@@ -77,7 +77,6 @@ const postSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-postSchema.index({ slug: 1 });
 postSchema.index({ status: 1, publishedAt: -1 });
 postSchema.index({ author: 1 });
 postSchema.index({ categories: 1 });
